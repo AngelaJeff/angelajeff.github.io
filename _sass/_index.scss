@@ -1,0 +1,51 @@
+.flower-ring{
+  width:100%;
+  height:100%;
+  padding-top: 25px;
+}
+
+@media only screen and (max-width: 600px){
+  .flower-ring{
+    padding-top: 14px;
+  }
+
+  .container-schedule{
+    padding:0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 83vh !important;
+  }
+
+  .schedule-image{
+    background-size: cover !important;
+    height: 51vh !important;
+    width: 100%;
+    background-position: 43% 50% !important;
+  }
+}
+
+.index-image{
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 100%;
+  background-position: center;
+}
+
+.background{
+  background-image: url("/assets/invitation/square.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-toggler{
+  border: none !important;
+}
+
+.schedule-image{
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 92vh;
+  background-position: center;
+}

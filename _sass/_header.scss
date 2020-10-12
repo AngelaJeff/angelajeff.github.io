@@ -1,0 +1,57 @@
+.bar{
+  border-bottom: solid 1px black;
+  margin-top:20px;
+  .head-title-kr{
+    font-size: 42px;
+    font-family: 'Hi Melody', cursive;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    padding-bottom: 10px;
+  }
+  .head-title{
+    font-size: 42px;
+    font-family: 'Cormorant Upright', serif;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    padding-bottom: 10px;
+  }
+  .wedding-date{
+    font-family: 'Cormorant Upright', serif;
+    font-size: 14px;
+    float: left;
+  }
+  .lang-selector{
+    font-family: 'Cormorant Upright', serif;
+    font-size: 14px;
+  }
+  .nav{
+    a{
+      padding:10px 20px;
+      font-size:13px;
+    }
+  }
+}
+a.nav-link {
+  padding-left: 0;
+  float:left;
+}
+.navbar{
+  .head-title{
+    font-size: 25px;
+    font-family: 'Cormorant Upright', serif;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    padding-bottom: 10px;
+  }
+  .head-title-kr{
+    font-size: 25px;
+    font-family: 'Hi Melody', cursive;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+    padding-bottom: 10px;
+  }
+}

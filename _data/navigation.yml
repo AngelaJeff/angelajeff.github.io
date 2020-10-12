@@ -1,0 +1,19 @@
+kr:
+  - name: 홈
+    link: /kr/
+  - name: 일정
+    link: /kr/schedule/
+  - name: 사진첩
+    link: /kr/about/
+  - name: 축하해주세요!
+    link: /kr/celebrate/
+
+en:
+  - name: home
+    link: /en/
+  - name: Schedule
+    link: /en/schedule/
+  - name: Our Story
+    link: /en/about/
+  - name: Celebration
+    link: /en/celebrate/

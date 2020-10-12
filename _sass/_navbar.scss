@@ -1,0 +1,25 @@
+.navbar-title{
+  margin-right:0 !important;
+  // margin-top: 23%;
+  font-size: 32px !important;
+  margin-top: 25px;
+}
+
+.navbar{
+  margin: auto;
+}
+
+@media only screen and (max-width: 767px){
+  .navbar-title{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px){
+  .navbar-expand-md {
+    -ms-flex-flow: column !important nowrap;
+    flex-flow: column !important;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}

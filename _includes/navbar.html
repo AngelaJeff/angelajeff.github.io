@@ -1,0 +1,33 @@
+<!-- navbar.html -->
+
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+  <a href="#" class="navbar-brand {% if page.lang == "en" %} head-title">Angela & Jeff</a> {% else %} head-title-kr">범석 & 선홍</a> {% endif %}
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav">
+
+        {% if page.lang == "en" %}
+          {% assign path = site.data.navigation.en %}
+        {% else %}
+          {% assign path = site.data.navigation.kr %}
+        {% endif %}
+
+        {% for item in path %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}style="color: black;"{% endif %}>
+            {{ item.name }}
+          </a>
+        </li>
+        {% endfor %}
+
+    </ul>
+  </div>
+  {% assign url = page.url | split: "/" %}
+  <div class="collapse navbar-collapse flex-row-reverse " id="navbarNav">
+      <a class="nav-link" href="{{ page.url | replace_first: "kr", "en"}}">en</a>
+      <div style="border"></div>
+      <a class="nav-link " href="{{ page.url | replace_first: "en", "kr"}}">kr</a>
+  </div>
+</nav>

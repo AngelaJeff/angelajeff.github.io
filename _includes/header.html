@@ -1,0 +1,48 @@
+<!-- header.html -->
+
+<header class="bar">
+  <div class="container-fluid">
+    <div class="wedding-date">December 12, 2020</div>
+    <ul class="nav lang-selector justify-content-end">
+      {% assign url = page.url | split: "/" %}
+      <li>
+        <a href="{{ page.url | replace_first: "kr", "en"}}">en</a>
+      </li>
+      <li>
+        <a href="{{ page.url | replace_first: "en", "kr"}}">kr</a>
+      </li>
+    </ul>
+      <div {% if page.lang == "en" %}class="head-title">Angela & Jeff</div> {%else%} class="head-title-kr">선홍 & 범석</div>{%endif%}
+    <ul class="nav justify-content-center">
+      {% if page.lang == "en" %}
+        {% assign path = site.data.navigation.en %}
+      {% else %}
+        {% assign path = site.data.navigation.kr %}
+      {% endif %}
+      {% for item in path %}
+      <li class="nav-item">
+        <a href="{{ item.link }}" {% if page.url == item.link %}style="color: black;"{% endif %}>
+          {{ item.name }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</header>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div><a class="navbar-brand" href="#">Navbar</a></div>
+  <div><h1>lasdkfj</h1></div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">Features</a>
+      <a class="nav-link" href="#">Pricing</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </div>
+  </div>
+</nav> -->

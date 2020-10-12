@@ -32,6 +32,8 @@ plugins:
   - jekyll-feed
 sass:
     style: compressed.
+comments:
+    provider: disqus
 
 # Exclude from processing.
 # The following items will not be processed, by default.

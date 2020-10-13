@@ -10,6 +10,18 @@
     }
 
 }
+@media only screen and (min-width: 900px){
+    .image-about{
+        height: 43em !important;
+    }
+    .image-small{
+        max-height: 33.4em !important;
+    }
+    .image-small2{
+        max-height: 31em !important;
+    }
+
+}
 
 .container-about{
     p {

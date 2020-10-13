@@ -4,6 +4,16 @@
   padding-top: 25px;
 }
 
+@media only screen and (min-width: 780px){
+    .index-en{
+        background-image: url('/assets/img/index-en.png');
+    }
+    .index-kr{
+        background-image: url('/assets/img/index-kr.png');
+    }
+
+}
+
 @media only screen and (max-width: 600px){
   .flower-ring{
     padding-top: 14px;

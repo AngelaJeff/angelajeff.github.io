@@ -6,10 +6,10 @@
 
 @media only screen and (min-width: 780px){
     .index-en{
-        background-image: url('/assets/img/index-en.png');
+        background-image: url('/assets/img/index-en.png') !important;
     }
     .index-kr{
-        background-image: url('/assets/img/index-kr.png');
+        background-image: url('/assets/img/index-kr.png') !important;
     }
 
 }

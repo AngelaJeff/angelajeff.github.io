@@ -1,6 +1,6 @@
 ---
 layout: base
-permalink: /kr/about/
+permalink: /kr/about2/
 lang: kr
 ---
 

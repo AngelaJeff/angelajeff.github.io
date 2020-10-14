@@ -1,9 +1,3 @@
-.flower-ring{
-  width:100%;
-  height:100%;
-  padding-top: 25px;
-}
-
 @media only screen and (min-width: 780px){
     .index-en{
         background-image: url('/assets/img/3.png') !important;
@@ -11,27 +5,43 @@
     .index-kr{
         background-image: url('/assets/img/1.png') !important;
     }
+    .schedule-image-kr{
+        background-image:url('/assets/img/schedule_long/2.png') !important;
+    }
+    .schedule-image-en{
+        background-image:url('/assets/img/schedule_long/1.png') !important;
+    }
 
 }
+@media only screen and (max-width: 376px){
+    .container-schedule{
+      padding:0 !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+    }
 
-@media only screen and (max-width: 600px){
-  .flower-ring{
-    padding-top: 14px;
-  }
+    .schedule-image{
+        background-size: cover !important;
+        width: 100%;
+        height: 46vh !important;
+    }
+}
+
+@media only screen and (min-width: 376px)and (max-width: 600px){
 
   .container-schedule{
     padding:0 !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    height: 83vh !important;
   }
 
   .schedule-image{
     background-size: cover !important;
-    height: 51vh !important;
+    height: 57vh !important;
     width: 100%;
-    background-position: 43% 50% !important;
+    // background-position: 40% 46% !important;
   }
 }
 

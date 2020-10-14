@@ -59,3 +59,25 @@
   height: 92vh;
   background-position: center;
 }
+
+.container-index{
+    height:100vh;
+    display: flex;
+    width:100%;
+    font-size: 1.2em;
+    p{
+        margin:auto !important;
+        text-align: center;
+    }
+    a{
+        color:black;
+        &:hover{
+            text-decoration: none;
+        }
+        padding:10px;
+    }
+    a:first-of-type{
+        margin-right:10px;
+    }
+
+}

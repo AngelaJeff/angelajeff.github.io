@@ -1,0 +1,41 @@
+.banner_celebrate_en{
+    background-image: url('/assets/long_banner/1.jpg');
+}
+.banner_celebrate_klr{
+    background-image: url('/assets/long_banner/2.jpg');
+}
+.banner_celebrate{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media only screen and (max-width: 377px){
+    .banner_celebrate{
+        height:20vh;
+    }
+}
+
+@media only screen and (min-width: 378px) and (max-width: 477px){
+    .banner_celebrate{
+        height:23vh;
+    }
+    .banner_celebrate_en{
+        background-image: url('/assets/small_banner/1.jpg');
+    }
+    .banner_celebrate_kr{
+        background-image: url('/assets/small_banner/2.jpg');
+    }
+}
+@media only screen and (min-width:478px)and(max-width: 768px){
+    .banner_celebrate{
+        height:38vh;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .banner_celebrate{
+        height:52vh;
+    }
+
+}
